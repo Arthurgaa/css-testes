@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 90%;
+    height: 450px;
+    margin: 30px auto;
+    border: 4px solid royalblue;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    /*row - column - row-reverse - column-reverse*/
+    flex-wrap: nowrap;
+    /*nowrap (padrão, distorce) - wrap (quebra a linha e não distorce os elementos) - wrap-reverse*/
+    justify-content: flex-start;
+    /* flex-start - flex-end - center - space-between - space-around - space-evenly */
+    align-items: stretch;
+    /* stretch (ocupa todo o espaço) - flex-start - flex-end - center*/
+    align-content: stretch;
+    /* stretch - flex-start - flex-end - center - space-between - space-around - space-evenly */
+}
+
+.item1{
+    order: 0;
+    flex-grow: 0;
+    flex-basis: 100px;
+}
+
+.item2{
+    order: 0;
+    flex-grow: 0;
+    flex-basis: 100px;
+    /* align-self: center; */
+}
+
+.item3{
+    order: 0;
+    flex-grow: 0;
+    flex-basis: 100px;
+}
+
+.item4{
+    order: 0;
+    flex-grow: 0;
+    flex-basis: 100px;
+}
+
+.item5{
+    order: 0;
+    flex-grow: 0;
+    flex-basis: 100px;
+}
+
+.item6{
+    order: 0;
+    flex-grow: 0;
+    flex-basis: 100px;
+}
+
+/* 
+- Ocupar o espaço que está sobrando: flex-grow 
+- O quanto que vai diminuir: flex-shrink
+- Para resumir todos os tipos de flex, 
+coloque o flex e os tipos dele em sequência: (grow) (shrink) (basis)
+*/
+
+
+.container>div{
+    /* width: 100px; */
+    border: 2px solid coral;
+    background-color: lightsalmon;
+    font-size: 1.2em;
+}
